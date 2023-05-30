@@ -10,12 +10,14 @@ int N = Convert.ToInt32(Console.ReadLine());
 int[] KoordA = new int[N];
 int[] KoordB = new int[N];
 
+Console.WriteLine("Введите координаты точки А:");
 for (int i = 0; i < N; i++)
 {
     Console.Write($"Координата {i + 1} точки А: ");
     KoordA[i] = Convert.ToInt32(Console.ReadLine());
 }
 
+Console.WriteLine("Введите координаты точки В:");
 for (int i = 0; i < N; i++)
 {
     Console.Write($"Координата {i + 1} точки B: ");
