@@ -3,6 +3,21 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
+
+
+void Kub(int num)
+{
+    for (int i = 1; i <= num; i++)
+    {
+        int result = Convert.ToInt32(Math.Pow(i, 3));
+        System.Console.Write($"{result} | ");
+    }
+}
+Console.Clear();
+System.Console.WriteLine("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+Kub(num);
+
 // int Kub(int num)
 // {
 //     int result = 0;
@@ -17,20 +32,6 @@
 // System.Console.WriteLine("Введите число: ");
 // int num = Convert.ToInt32(Console.ReadLine());
 // System.Console.Write($"{Kub(num)}, ");
-
-void Kub(int num)
-{
-    for (int i = 1; i <= num; i++)
-    {
-        int result = Convert.ToInt32(Math.Pow(i, 3));
-        System.Console.Write($"{result}, ");
-    }
-}
-Console.Clear();
-System.Console.WriteLine("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-Kub(num);
-
 
 // Console.Clear();
 // System.Console.WriteLine("Введите число: ");
