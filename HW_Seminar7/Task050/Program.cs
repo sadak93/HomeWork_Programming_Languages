@@ -49,6 +49,7 @@ int [] SearchNum (int [,] array)
                 }
         }
     }
+    System.Console.WriteLine("Идекс искомого числа: ");
     return arrayI;
 }
 
