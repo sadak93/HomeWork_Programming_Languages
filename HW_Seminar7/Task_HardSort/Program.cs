@@ -48,19 +48,6 @@ int [,] Sort (int[,] array)
         }
     return array;
 }
-// for (int i = 0; i < array2.Length-1; i++)
-//     {
-//         int imin = i;
-//         for (int j = i+1; j < array2.Length; j++)
-//         {
-//             if (array2[j]<array2[imin])
-//                 imin = j;
-//         }
-//         int temp = array2[i];
-//         array2[i]=array2[imin];
-//         array2[imin]=temp;
-//     }
-//     return array2;
 
 Console.Clear();
 System.Console.WriteLine("Введите количество строк");
