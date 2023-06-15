@@ -33,10 +33,10 @@ void PrintArray2(int[] array)
     }
 }
 
-int [] SearchNum (int [,] array)
+int [] SearchNum (int [,] array, int num)
 {
-    System.Console.WriteLine("Введите искомое число");
-    int num = Convert.ToInt32(Console.ReadLine());
+    // System.Console.WriteLine("Введите искомое число");
+    // int num = Convert.ToInt32(Console.ReadLine());
     int [] arrayI= new int [2];
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -53,6 +53,17 @@ int [] SearchNum (int [,] array)
     return arrayI;
 }
 
+bool FindNum (int [,] array, int num)
+{
+    bool find = false;
+    foreach (var item in array)
+    {
+        if (item == num)
+            find = true;
+    }
+    return find;
+}
+
 Console.Clear();
 System.Console.WriteLine("Введите количество строк");
 int rows = Convert.ToInt32(Console.ReadLine());
@@ -62,6 +73,12 @@ int[,] array = new int [rows, cols];
 
 FillArray(array);
 PrintArray(array);
+System.Console.WriteLine("Введите искомое число");
+int num = Convert.ToInt32(Console.ReadLine());
+if (FindNum(array, num))
+{
+    PrintArray2(SearchNum(array,num));
+}
+else System.Console.WriteLine("Этого числа нет в массиве");
 
-PrintArray2(SearchNum(array));
 
