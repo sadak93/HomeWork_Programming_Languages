@@ -35,10 +35,10 @@ void PrintArray(int[,] array)
         }
 }
 
-void MixArray (int [,] array)
-{
+// void MixArray (int [,] array)
+// {
     
-}
+// }
 
 Console.Clear();
 System.Console.WriteLine("Введите количество строк");
