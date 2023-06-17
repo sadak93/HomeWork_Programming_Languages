@@ -48,7 +48,6 @@ int [,] Sort (int[,] array)
         }
     return array;
 }
-
 Console.Clear();
 System.Console.WriteLine("Введите количество строк");
 int rows = Convert.ToInt32(Console.ReadLine());
